@@ -26,6 +26,7 @@ transmitter gain, receiver gain, radar frequency, radar cross section, and minim
 
 
  _PROGRAM_:
+ ``asm
 asm
 clc;
 clear;
@@ -50,7 +51,7 @@ Pt_fixed = 3000;
 Pr_G = (Pt_fixed .* G_values.^2 .* lambda^2 .* sigma) ./ (pi4 .* R_fixed.^4);
 subplot(3,1,3);
 plot(G_values, Pr_G);
-
+``
 
 _Output:
 <img width="1715" height="1010" alt="Screenshot 2025-11-20 234632" src="https://github.com/user-attachments/assets/b1dd8d0b-0d4d-45d0-9092-623180aa659b" />
